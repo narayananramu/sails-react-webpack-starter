@@ -2,7 +2,7 @@
   "name": "sails-react-webpack-starter",
   "private": false,
   "version": "1.0.0",
-  "description": "a Sails application",
+  "description": "a Sails React application",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -33,7 +33,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/narayananramu/sails-react-webpack-starter.git"
+    "url": "https://github.com/narayananramu/sails-react-webpack-starter.git"
   },
   "author": "Narayanan M Ramanathan",
   "license": "MIT"
