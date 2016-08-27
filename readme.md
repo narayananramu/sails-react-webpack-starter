@@ -39,11 +39,24 @@ open http://localhost:1337
     ```
     npm install grunt-babel babel-preset-es2015 babel-preset-react --save
     ```
-5. Edit ```compileAssets.js syncAssets.js config/babel.js``` to support jsx files
+5. Edit ```compileAssets.js syncAssets.js tasks/config/babel.js``` to support jsx files
 
-6. Install webpack-dev-server webpack grunt-webpack
+6. Create File ```.babelrc``` in the project root
+    ```
+    {
+      "presets": ["es2015"]
+    }
+    ```
+
+7. Install webpack-dev-server webpack grunt-webpack
     ```
     npm install webpack-dev-server webpack grunt-webpack --save
     ```
 
-7. Edit ```compileAssets.js syncAssets.js config/webpack.js``` to support bundling react source and libraries
+8. Edit ```compileAssets.js syncAssets.js tasks/config/webpack.js``` to support bundling react source and libraries
+
+9. Create directories according to your configuration
+
+10. Edit ```watch.js``` to watch your react source directory for changes
+
+11. Create your main JSX (say index.jsx) file and enjoy!
