@@ -44,7 +44,7 @@ open http://localhost:1337
 6. Create File ```.babelrc``` in the project root
     ```
     {
-      "presets": ["es2015"]
+      "presets": ["es2015","react"]
     }
     ```
 
