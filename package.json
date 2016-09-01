@@ -1,6 +1,5 @@
 {
   "name": "sails-react-webpack-starter",
-  "private": false,
   "version": "1.0.0",
   "description": "a Sails React application",
   "keywords": [],
