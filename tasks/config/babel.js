@@ -8,7 +8,6 @@
  *
  */
 module.exports = function(grunt) {
-
   grunt.config.set('babel', {
     dev: {
       options: {
@@ -16,7 +15,7 @@ module.exports = function(grunt) {
       },
       files: [{
         expand: true,
-        cwd: 'react/source/',
+        cwd: './react/source/',
         src: ['**/*.jsx'],
         dest: 'react/compiled/',
         ext: '.js'

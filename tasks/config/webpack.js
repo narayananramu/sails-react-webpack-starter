@@ -7,16 +7,22 @@
  * `js/bundle` directory.
  *
  */
+var pageBase = "./react/compiled";
+var entries = {};
+var fs = require('fs'),
+    entry = fs.readdirSync(pageBase).filter(function(file) {
+      entries[file] = pageBase+"/"+file;
+    });
+
 module.exports = function(grunt) {
   grunt.config.set('webpack', {
     options: {
-      entry: "./react/compiled/index.js",
+      entry: entries,
       output: {
         path: "./assets/js/bundle",
-        filename: "[name].js"
+        filename: "[name]"
       },
       stats: {
-        // Configure the console output
         colors: true,
         modules: true,
         reasons: true
@@ -32,9 +38,7 @@ module.exports = function(grunt) {
 
       keepalive: false,
 
-      inline: true,
-
-      hot: true
+      inline: true
     },
     build:{}
   });
